@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
 
 :root{
-  --primaryGreen: #02796a;
-  --secondaryGreen: #f7fff9;
+  --primaryBlue: #1f67c5;
+  --secondaryBlue: #e1ebf8;
 }
 
 body{font-family: 'Merriweather', sans-serif;}
 
-.primaryGreen{
-  background-color: var(--primaryGreen);
+.primaryBlue{
+  background-color: var(--primaryBlue);
 }
 .hero {
-  background-color: var(--primaryGreen);
+  background-color: var(--primaryBlue);
 }
 
 .jumbotron{
@@ -42,12 +42,12 @@ body{font-family: 'Merriweather', sans-serif;}
   50% {border-color: transparent ;}
 }
 .accordion-button:focus{
-  border-color: var(--primaryGreen) !important;
+  border-color: var(--primaryBlue) !important;
   box-shadow: 0 0 0 0.25rem rgba(60, 87, 62, 0.25) !important;
 }
 .accordion-button:not(.collapsed){
   color: #212529 !important;
-  background-color: var(--secondaryGreen) !important;
+  background-color: var(--secondaryBlue) !important;
 }
 
 .contactData{
