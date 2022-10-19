@@ -1,72 +1,90 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
 
-:root{
+:root {
   --primaryBlue: #1f67c5;
   --secondaryBlue: #e1ebf8;
+  --textBlue: #103e6c;
 }
 
-body{font-family: 'Merriweather', sans-serif;}
+body {
+  font-family: 'Merriweather', sans-serif;
+}
 
-.primaryBlue{
+.primaryBlue {
   background-color: var(--primaryBlue);
 }
+
 .hero {
   background-color: var(--primaryBlue);
 }
 
-.jumbotron{
-  background: url('./assets/background1.jpeg') no-repeat ;
+.jumbotron {
+  background: url('./assets/hero.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 
-.maquina{
+.hero-text {
+  color: var(--textBlue);
+}
+
+.hero-subtitle {
+  color: var(--textBlue);
+}
+
+.maquina {
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
   width: 24ch;
-
   animation: typing 2s steps(24),
-  blink .5s infinite step-end alternate;
+    blink .5s infinite step-end alternate;
   overflow: hidden;
 }
 
-@keyframes typing{
-  from {width: 0}
+@keyframes typing {
+  from {
+    width: 0
+  }
 }
 
-@keyframes blink{
-  50% {border-color: transparent ;}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
-.accordion-button:focus{
+
+.accordion-button:focus {
   border-color: var(--primaryBlue) !important;
   box-shadow: 0 0 0 0.25rem rgba(60, 87, 62, 0.25) !important;
 }
-.accordion-button:not(.collapsed){
+
+.accordion-button:not(.collapsed) {
   color: #212529 !important;
   background-color: var(--secondaryBlue) !important;
 }
 
-.contactData{
+.contactData {
   list-style: none;
 }
 
-.contactInfo{
+.contactInfo {
   font-size: x-large;
 
 }
 
-#map{
+#map {
   height: 270px;
   border-radius: 5px;
 }
 
-#whatsapp{
+#whatsapp {
   display: block;
 }
+
 .float {
   position: fixed;
   width: 60px;
